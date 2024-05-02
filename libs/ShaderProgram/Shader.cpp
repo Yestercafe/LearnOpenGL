@@ -84,6 +84,9 @@ int Shader::get_attribute_location(const char *name) {
     return glGetAttribLocation(m_program_, name);
 }
 
+int Shader::get_uniform_location(const char *name) {
+    return glGetUniformLocation(m_program_, name);
+}
 
 int Shader::checkout_compile_error_(const unsigned int shader, const Type type) {
     int succ = 0;

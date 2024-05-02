@@ -26,6 +26,7 @@ public:
     int use();
 
     int get_attribute_location(const char* name);
+    int get_uniform_location(const char* name);
 
 private:
     static int checkout_compile_error_(unsigned int shader, Type type);

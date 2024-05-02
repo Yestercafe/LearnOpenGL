@@ -8,5 +8,9 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
 find_package(spdlog CONFIG REQUIRED)
 
-add_subdirectory(ShaderProgram)
+file(COPY "./assets" DESTINATION ${CMAKE_BINARY_DIR})
+
+add_subdirectory(libs)
+
 add_subdirectory(Triangle)
+add_subdirectory(Textures)

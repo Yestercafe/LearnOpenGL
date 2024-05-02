@@ -1,7 +1,9 @@
-project(Triangle)
+project(Textures)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}
-    ../libs/ShaderProgram)
+    ../libs/ShaderProgram
+    ../libs/StbImage
+)
 
 file(GLOB SOURCES "*.cpp")
 
@@ -15,4 +17,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     glm::glm
     spdlog::spdlog_header_only
     ShaderProgram
+    StbImage
 )
