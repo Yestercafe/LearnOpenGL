@@ -12,10 +12,6 @@ StbImage::StbImage(const std::string &path, bool bFlip) {
     m_image_ = stbi_load(path.c_str(), &m_width_, &m_height_, &m_channel_, 0);
 }
 
-const unsigned char *StbImage::operator()() const {
-    return image();
-}
-
 void StbImage::release() {
     if (m_image_) {
         stbi_image_free(m_image_);

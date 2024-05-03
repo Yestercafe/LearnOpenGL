@@ -27,7 +27,8 @@ public:
     int height() const { return m_height_; }
     int channel() const { return m_channel_; }
     const unsigned char* image() const { return m_image_; }
-    const unsigned char* operator()() const;
+    const unsigned char* operator()() const { return image(); }
+    operator const void*() const { return image(); }
 
     void release();
     ~StbImage();

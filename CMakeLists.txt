@@ -14,3 +14,4 @@ add_subdirectory(libs)
 
 add_subdirectory(Triangle)
 add_subdirectory(Textures)
+add_subdirectory(Transformations)
