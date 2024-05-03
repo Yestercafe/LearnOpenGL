@@ -10,6 +10,6 @@ Developed with CLion.
 
 ## 目录
 
-- <Triangle>
-- <Textures>
-- <Transformations>
+- [Triangle](Triangle)
+- [Textures](Textures)
+- [Transformations](Transformations)
