@@ -13,3 +13,4 @@ Developed with CLion.
 - [Triangle](Triangle)
 - [Textures](Textures)
 - [Transformations](Transformations)
+- [Cubes](Cubes)
